@@ -26,8 +26,8 @@ def displayIP(dispObj):
 
 
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(17,GPIO.OUT)
-GPIO.output(17,GPIO.HIGH)
+GPIO.setup(25,GPIO.OUT)
+GPIO.output(25,GPIO.HIGH)
 
 
 ssd1306 = ssd1306.SSD1306_I2C(bus=1, device=0x3c)
