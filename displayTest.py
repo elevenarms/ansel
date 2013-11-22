@@ -5,6 +5,11 @@ import struct
 import RPi.GPIO as GPIO
 
 
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(25,GPIO.OUT)
+GPIO.output(25,GPIO.HIGH)
+
+
 def get_ip_address(ifname):
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     return socket.inet_ntoa(fcntl.ioctl(
@@ -26,9 +31,6 @@ def displayIP(dispObj):
 	dispObj.display()
 
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(25,GPIO.OUT)
-GPIO.output(25,GPIO.HIGH)
 
 
 ssd1306 = ssd1306.SSD1306_I2C(bus=1, device=0x3c)
