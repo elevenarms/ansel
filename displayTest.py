@@ -2,6 +2,7 @@ import gaugette.ssd1306 as SSD1306_I2C
 import socket
 import fcntl
 import struct
+import RPi.GPIO as GPIO
 
 
 def get_ip_address(ifname):
