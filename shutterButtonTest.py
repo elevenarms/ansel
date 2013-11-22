@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 
 
-def testButton(channel):
+def testCallback(channel):
 	print "fuck yea button press!"
 
 GPIO.setmode(GPIO.BCM)
