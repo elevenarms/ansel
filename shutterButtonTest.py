@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-
+import time
 
 def testButton(channel):
 	print "fuck yea button press!"
@@ -10,3 +10,4 @@ GPIO.add_event_detect(22, GPIO.FALLING, callback=testButton,bouncetime=300)
 
 while True:
 	print "waiting..."
+	time.sleep(1)
