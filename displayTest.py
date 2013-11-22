@@ -1,9 +1,14 @@
-import gaugette.ssd1306 as SSD1306_I2C
+import time, random
+import gaugette.ssd1306 as ssd1306
+import RPi.GPIO as GPIO
+import picamera
+from datetime import datetime
+import rotaryEnc
 import socket
 import fcntl
 import struct
-import RPi.GPIO as GPIO
 
+GPIO.setwarnings(False)
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(25,GPIO.OUT)
