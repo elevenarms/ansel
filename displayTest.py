@@ -3,7 +3,6 @@ import gaugette.ssd1306 as ssd1306
 import RPi.GPIO as GPIO
 import picamera
 from datetime import datetime
-import rotaryEnc
 import socket
 import fcntl
 import struct
